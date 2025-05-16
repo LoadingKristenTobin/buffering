@@ -63,35 +63,35 @@ h1, h2, h3 {
   background-color: #005582;
 }
 
-
+/* summary workflow below */
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #121212;
-  color: #eaeaea;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  background: url('images/background2.jpg') no-repeat center center fixed; /* New background */
+  background-size: cover;
 }
 
 nav {
-  background-color: #1f1f1f;
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
   text-align: center;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  border-bottom: 2px solid #ffffff;
 }
 
 nav a {
-  color: #eaeaea;
-  text-decoration: none;
+  color: #ffffff;
   margin: 0 20px;
-  font-weight: 500;
+  font-weight: bold;
+  text-decoration: none;
   font-size: 14px;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 nav a:hover {
@@ -99,67 +99,55 @@ nav a:hover {
 }
 
 .content-box {
-  background-color: rgba(31, 31, 31, 0.8);
-  backdrop-filter: blur(5px);
-  padding: 40px;
-  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+  padding: 30px;
   width: 80%;
   max-width: 800px;
+  margin: 120px auto; /* Space for navbar */
   border-radius: 12px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-  color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+  color: #222;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .content-box:hover {
   transform: scale(1.02);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .content-box h1 {
   font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #ff6f61;
-}
-
-.content-box p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  color: #003366;
 }
 
 .content-box h3 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-top: 20px;
   color: #ff6f61;
 }
 
+.content-box p, .content-box ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 .content-box ul {
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
-  margin-bottom: 30px;
 }
 
 .content-box ul li {
   padding-left: 20px;
-  margin-bottom: 10px;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .content-box ul li::before {
-  content: '➤';
+  content: "➤";
   position: absolute;
   left: 0;
   color: #ff6f61;
 }
-
-.content-box p:last-of-type {
-  font-style: italic;
-  color: #b3b3b3;
-}
-
-
-
 
