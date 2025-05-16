@@ -30,11 +30,21 @@ nav a:hover {
 
 .content-box {
   max-width: 700px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
   padding: 30px;
   margin: 60px auto;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  color: #ffffff; /* Ensure text is visible */
+  backdrop-filter: blur(5px); /* Optional: adds a blur effect */
+}
+
+.content-box h1, .content-box a {
+  color: #ffffff; /* Ensure links and headings are visible */
+}
+
+.content-box a:hover {
+  color: #f0c14b; /* Change hover color for emphasis */
 }
 
 h1, h2, h3 {
