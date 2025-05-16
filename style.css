@@ -29,14 +29,13 @@ nav a:hover {
 }
 
 .content-box {
-  max-width: 700px;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images.background.jpg');
+  background-size: cover;
+  background-position: center;
   padding: 30px;
   margin: 60px auto;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-  color: #ffffff; /* Ensure text is visible */
-  backdrop-filter: blur(5px); /* Optional: adds a blur effect */
+  color: #ffffff;
 }
 
 .content-box h1, .content-box a {
