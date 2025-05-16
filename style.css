@@ -70,7 +70,7 @@ body {
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
   color: #222;
-  background: url('images/background2.jpg') no-repeat center center fixed; /* New background */
+  background: url('images.summary.jpg') no-repeat center center fixed; /* New background */
   background-size: cover;
 }
 
