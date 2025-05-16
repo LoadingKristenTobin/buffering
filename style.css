@@ -6,7 +6,7 @@ body {
 }
 
 .home-bg {
-  background: url('images.background.jpg') no-repeat center center fixed;
+  background: url('images/background.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
 }
@@ -29,21 +29,20 @@ nav a:hover {
 }
 
 .content-box {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images.background.jpg');
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   padding: 30px;
   margin: 60px auto;
   border-radius: 10px;
   color: #ffffff;
+  background-blend-mode: overlay; /* Optional: To enhance the blend effect */
 }
 
 .content-box h1, .content-box a {
-  color: #ffffff; /* Ensure links and headings are visible */
+  color: #ffffff;
 }
 
 .content-box a:hover {
-  color: #f0c14b; /* Change hover color for emphasis */
+  color: #f0c14b;
 }
 
 h1, h2, h3 {
