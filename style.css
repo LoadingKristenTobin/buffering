@@ -1,9 +1,13 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', sans-serif;
   color: #222;
-  background-color: #f9f9f9;
+  background: url('images.summary.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
 }
+
 
 .home-bg {
   background: url('images.background.jpg') no-repeat center center fixed;
@@ -99,16 +103,23 @@ nav a:hover {
 }
 
 .content-box {
-  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 30px;
-  width: 80%;
-  max-width: 800px;
-  margin: 120px auto; /* Space for navbar */
+  width: 75vw;
+  max-width: none; /* Optional: remove max width constraint */
+  margin: 120px auto;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+  backdrop-filter: blur(10px);
   color: #222;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    width: 90vw;
+    padding: 20px;
+  }
 }
 
 .content-box:hover {
