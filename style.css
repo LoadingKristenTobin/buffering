@@ -79,15 +79,16 @@ body {
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: transparent; /* Fully clear */
   padding: 15px;
   text-align: center;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Optional: subtler border */
 }
+
 
 nav a {
   color: #ffffff;
@@ -96,7 +97,9 @@ nav a {
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s;
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
+
 
 nav a:hover {
   color: #ff6f61;
